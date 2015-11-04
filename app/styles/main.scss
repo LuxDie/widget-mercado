@@ -26,8 +26,14 @@ body {
   font-weight: bold;
 }
 
-.myCarousel li {
-  width: 210px;
-  height: 210px;
-  margin-right: 15px;
+.myCarousel {
+  li {
+    width: 210px;
+    height: 210px;
+    margin-right: 15px;
+  }
+
+  .ch-carousel-mask {
+    height: 210px;
+  }
 }

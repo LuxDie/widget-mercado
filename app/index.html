@@ -19,6 +19,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="styles/mesh.css">
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -27,55 +28,70 @@
 
 
     <div class="view">
-      <h1>Ipad Mini Apple 16 GB Wifi Led 7.9</h1>
-      <img src="images/image1.jpg" alt="Image 1">
-      <p class="price">$ 4799.99</p>
-      <form>
-        <p>Quantity <input type="number" min="1" max="99" /></p>
-        <p>Payments <input type="number" min="1" max="99" /></p>
-        <button type="submit" class="ch-btn">Buy</button>
-      </form>
-      <p class="disclaimer">Mercadolibre isn't the owner of this product</p>
-      <h2>More products like this</h2>
 
-      <div class="ch-box-lite">
-        <div class="myCarousel ch-carousel">
-          <div class="ch-carousel-mask" role="tabpanel">
-            <ul class="ch-carousel-list">
-              <li aria-label="page1" aria-posinset="1"
-                  aria-setsize="19" aria-hidden="false" class="ch-carousel-item">
-                <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1">
-              </li>
-              <li class="ch-carousel-item">
-                <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 2">
-              </li>
-              <li class="ch-carousel-item">
-                <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 3">
-              </li>
-              <li class="ch-carousel-item">
-                <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 4">
-              </li>
-            </ul>
+      <h1>Ipad Mini Apple 16 GB Wifi Led 7.9</h1>
+      <div class="ch-g1-3">
+        <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1">
+      </div>
+      <div class="ch-g2-3">
+        <p class="price">$ 4799.99</p>
+        <form>
+          <p>Quantity <input type="number" min="1" max="99" /></p>
+          <p>Payments <input type="number" min="1" max="99" /></p>
+          <button type="submit" class="ch-btn">Buy</button>
+        </form>
+        <p class="disclaimer">Mercadolibre isn't the owner of this product</p>
+        <h2>More products like this</h2>
+
+        <div class="ch-box-lite">
+          <div class="myCarousel ch-carousel">
+            <div class="ch-carousel-mask" role="tabpanel">
+              <ul class="ch-carousel-list">
+                <li aria-label="page1" aria-posinset="1"
+                    aria-setsize="19" aria-hidden="false" class="ch-carousel-item">
+                  <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1">
+                </li>
+                <li class="ch-carousel-item">
+                  <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 2">
+                </li>
+                <li class="ch-carousel-item">
+                  <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 3">
+                </li>
+                <li class="ch-carousel-item">
+                  <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 4">
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="tabs">
-        <p>Product description</p>
-        <p>Questions</p>
-      </div>
-      <div class="description"></div>
-      <div class="questions">
-        <dl>
-          <dt>Buyer</dt>
-          <dd>Do you have this one in white?</dd>
-        </dl>
-        <dl>
-          <dt>Seller</dt>
-          <dd>No I don't, I only have black</dd>
-        </dl>
-      </div>
-    </div>
 
+      <div class="ch-clearfix"></div>
+
+      <div class="tabs ch-tabs">
+        <ul role="tablist" class="ch-tabs-triggers">
+          <li><a role="tab" aria-controls="tab1-a" href="#tab1-a"
+                 class="ch-tab ch-user-no-select">Product description</a></li>
+          <li><a role="tab" aria-controls="tab2-a" href="#tab2-a" class="ch-tab ch-user-no-select">Questions</a></li>
+        </ul>
+        <div role="presentation" class="ch-box-lite ch-tabs-panel">
+          <div aria-hidden="false" role="tabpanel" aria-expanded="true" class="ch-tabpanel" id="tab1-a">
+            <p>Product description goes here</p>
+          </div>
+          <div role="tabpanel" aria-expanded="false" id="tab2-a" class="ch-hide ch-tabpanel">
+            <dl>
+              <dt>Buyer</dt>
+              <dd>Do you have this one in white?</dd>
+            </dl>
+            <dl>
+              <dt>Seller</dt>
+              <dd>No I don't, I only have black</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
