@@ -27,17 +27,27 @@
     <![endif]-->
 
 
-    <div class="view">
+    <div class="widget-mercado">
 
       <h1>Ipad Mini Apple 16 GB Wifi Led 7.9</h1>
       <div class="ch-g1-3">
-        <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1">
+        <div class="ch-leftcolumn">
+          <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1">
+        </div>
       </div>
       <div class="ch-g2-3">
+        <div class="ch-rightcolumn">
         <p class="price">$ 4799.99</p>
-        <form>
-          <p>Quantity <input type="number" min="1" max="99" /></p>
-          <p>Payments <input type="number" min="1" max="99" /></p>
+        <form id="form">
+          <label for="inputQty" class="ch-g1-2">Quantity</label>
+          <div class="ch-g1-2">
+            <input id="inputQty" type="number" min="1" max="99">
+          </div>
+          <label for="inputPay" class="ch-g1-2">Payments</label>
+          <div class="ch-g1-2">
+            <input id="inputPay" type="number" min="1" max="99">
+          </div>
+          <div class="ch-clearfix"></div>
           <button type="submit" class="ch-btn">Buy</button>
         </form>
         <p class="disclaimer">Mercadolibre isn't the owner of this product</p>
@@ -46,18 +56,17 @@
         <div class="ch-box-lite">
           <div class="myCarousel ch-carousel">
             <div class="ch-carousel-mask" role="tabpanel">
-              <ul class="ch-carousel-list">
-                <li aria-label="page1" aria-posinset="1"
-                    aria-setsize="19" aria-hidden="false" class="ch-carousel-item">
+              <ul>
+                <li>
                   <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1">
                 </li>
-                <li class="ch-carousel-item">
+                <li>
                   <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 2">
                 </li>
-                <li class="ch-carousel-item">
+                <li>
                   <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 3">
                 </li>
-                <li class="ch-carousel-item">
+                <li>
                   <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 4">
                 </li>
               </ul>
@@ -65,30 +74,37 @@
           </div>
         </div>
       </div>
+      </div>
 
       <div class="ch-clearfix"></div>
+      <hr>
 
       <div class="tabs ch-tabs">
         <ul role="tablist" class="ch-tabs-triggers">
-          <li><a role="tab" aria-controls="tab1-a" href="#tab1-a"
-                 class="ch-tab ch-user-no-select">Product description</a></li>
-          <li><a role="tab" aria-controls="tab2-a" href="#tab2-a" class="ch-tab ch-user-no-select">Questions</a></li>
+          <li>
+            <input type="radio" name="tabs" id="tab1" checked>
+            <label for="tab1" role="tab" aria-controls="tab1-a" class="ch-tab">Product description</label>
+            <div id="tab-content1" class="tab-content">
+              <p>Product description goes here.</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab2">
+            <label for="tab2" role="tab" aria-controls="tab2-a" class="ch-tab">Questions</label>
+            <div id="tab-content2" class="tab-content">
+              <dl>
+                <dt class="buyer">Buyer</dt>
+                <dd>Do you have this one in white?</dd>
+              </dl>
+              <dl>
+                <dt class="seller">Seller</dt>
+                <dd>No I don't, I only have black</dd>
+              </dl>
+            </div>
+          </li>
         </ul>
-        <div role="presentation" class="ch-box-lite ch-tabs-panel">
-          <div aria-hidden="false" role="tabpanel" aria-expanded="true" class="ch-tabpanel" id="tab1-a">
-            <p>Product description goes here</p>
-          </div>
-          <div role="tabpanel" aria-expanded="false" id="tab2-a" class="ch-hide ch-tabpanel">
-            <dl>
-              <dt>Buyer</dt>
-              <dd>Do you have this one in white?</dd>
-            </dl>
-            <dl>
-              <dt>Seller</dt>
-              <dd>No I don't, I only have black</dd>
-            </dl>
-          </div>
-        </div>
+        <!--<div role="presentation" class="ch-box-lite">-->
+        <!--</div>-->
       </div>
 
     </div>
@@ -96,6 +112,9 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tiny.js/tiny.js"></script>
+    <script src="/bower_components/tiny.js/dist/tiny.js"></script>
+    <script src="/bower_components/tiny.js/dist/tiny.min.js"></script>
     <script src="/bower_components/chico/dist/ui/chico.js"></script>
     <script src="/bower_components/chico/dist/mobile/chico.js"></script>
     <!-- endbower -->

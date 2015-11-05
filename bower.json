@@ -3,6 +3,6 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.4",
-    "chico": "~1.2.2"
+    "chico": "~2.0.0"
   }
 }

@@ -1,10 +1,6 @@
 // jshint devel:true
 (function () {
 
-  var carousel = $('.myCarousel').carousel({
-    limitPerPage: 3
-  });
-
-  var tabs = $(selector).Tabs();
+  var carousel = new ch.Carousel(ch('.myCarousel')[0]);
 
 })();

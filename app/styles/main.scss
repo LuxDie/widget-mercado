@@ -7,11 +7,8 @@ body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+  width: 800px;
 }
-
-//img {
-//  width: 100px;
-//}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -20,20 +17,94 @@ body {
   padding: 0.2em 0;
 }
 
-.price {
-  font-size: 2em;
-  color: #810000;
-  font-weight: bold;
-}
-
-.myCarousel {
-  li {
-    width: 210px;
-    height: 210px;
-    margin-right: 15px;
+.widget-mercado {
+  .price {
+    font-size: 1.3em;
+    color: #810000;
+    font-weight: bold;
   }
 
-  .ch-carousel-mask {
-    height: 210px;
+  .myCarousel {
+    li {
+      width: 110px;
+      height: 110px;
+      margin-right: 15px;
+    }
+  }
+
+  // Tabs
+
+  .tabs input[type=radio] {
+    display: none;
+  }
+
+  .tabs [id^="tab"]:checked + label {
+    background-color: #F0F0F0;
+    background-image: linear-gradient(#F0F0F0, #FFF);
+    border-bottom: 1px solid #FFF;
+    cursor: default;
+    font-weight: bold;
+    box-shadow: 2px 0px 2px rgba(255, 255, 255, 0.5);
+  }
+
+  .tabs label {
+    cursor: pointer;
+  }
+
+  #tab1:checked ~ #tab-content1,
+  #tab2:checked ~ #tab-content2,
+  #tab3:checked ~ #tab-content3 {
+    display: block;
+  }
+
+  .tab-content {
+    display: none;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+
+  .buyer {
+    font-weight: bold;
+    color: #0000AA;
+  }
+
+  .buyer ~ dd {
+    color: #004add;
+    background-color: #a9f2ff;
+  }
+
+  .seller {
+    font-weight: bold;
+    color: #00A000;
+  }
+
+  .seller ~ dd {
+    color: #007600;
+    background-color: #a4ffcb;
+  }
+
+  .buyer ~ dd, .seller ~ dd {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  #form {
+    width: 150px;
+  }
+
+  #form input {
+    width: 50px;
+  }
+
+  p {
+    margin: 10px 0px;
+  }
+
+  .disclaimer {
+    margin-bottom: 25px;
   }
 }
