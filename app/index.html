@@ -27,53 +27,55 @@
     <![endif]-->
 
 
-    <div class="widget-mercado">
+    <div class="widget-mercado" itemscope itemtype="https://schema.org/Product">
 
-      <h1>Ipad Mini Apple 16 GB Wifi Led 7.9</h1>
+      <h1 itemprop="name">Ipad Mini Apple 16 GB Wifi Led 7.9</h1>
       <div class="ch-g1-3">
         <div class="ch-leftcolumn">
-          <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1">
+          <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1" itemprop="image">
         </div>
       </div>
       <div class="ch-g2-3">
         <div class="ch-rightcolumn">
-        <p class="price">$ 4799.99</p>
-        <form id="form">
-          <label for="inputQty" class="ch-g1-2">Quantity</label>
-          <div class="ch-g1-2">
-            <input id="inputQty" type="number" min="1" max="99">
+          <div itemscope="Offer" itemtype="http://schema.org/Offer">
+            <p class="price" itemprop="price">$ 4799.99</p>
           </div>
-          <label for="inputPay" class="ch-g1-2">Payments</label>
-          <div class="ch-g1-2">
-            <input id="inputPay" type="number" min="1" max="99">
-          </div>
-          <div class="ch-clearfix"></div>
-          <button type="submit" class="ch-btn">Buy</button>
-        </form>
-        <p class="disclaimer">Mercadolibre isn't the owner of this product</p>
-        <h2>More products like this</h2>
+          <form id="form">
+            <label for="inputQty" class="ch-g1-2">Quantity</label>
+            <div class="ch-g1-2">
+              <input id="inputQty" type="number" min="1" max="99">
+            </div>
+            <label for="inputPay" class="ch-g1-2">Payments</label>
+            <div class="ch-g1-2">
+              <input id="inputPay" type="number" min="1" max="99">
+            </div>
+            <div class="ch-clearfix"></div>
+            <button type="submit" class="ch-btn">Buy</button>
+          </form>
+          <p class="disclaimer">Mercadolibre isn't the owner of this product</p>
+          <h2>More products like this</h2>
 
-        <div class="ch-box-lite">
-          <div class="myCarousel ch-carousel">
-            <div class="ch-carousel-mask" role="tabpanel">
-              <ul>
-                <li>
-                  <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1">
-                </li>
-                <li>
-                  <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 2">
-                </li>
-                <li>
-                  <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 3">
-                </li>
-                <li>
-                  <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 4">
-                </li>
-              </ul>
+          <div class="ch-box-lite">
+            <div class="myCarousel ch-carousel" aria-live="polite">
+              <div class="ch-carousel-mask">
+                <ul>
+                  <li>
+                    <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 1" itemprop="image">
+                  </li>
+                  <li>
+                    <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 2" itemprop="image">
+                  </li>
+                  <li>
+                    <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 3" itemprop="image">
+                  </li>
+                  <li>
+                    <img src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png" alt="Image 4" itemprop="image">
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
       <div class="ch-clearfix"></div>
@@ -83,15 +85,15 @@
         <ul role="tablist" class="ch-tabs-triggers">
           <li>
             <input type="radio" name="tabs" id="tab1" checked>
-            <label for="tab1" role="tab" aria-controls="tab1-a" class="ch-tab">Product description</label>
-            <div id="tab-content1" class="tab-content">
-              <p>Product description goes here.</p>
+            <label for="tab1" class="ch-tab" role="tab" aria-controls="tab-content1">Product description</label>
+            <div id="tab-content1" class="tab-content" role="tabpanel">
+              <p itemprop="description">Product description goes here.</p>
             </div>
           </li>
           <li>
             <input type="radio" name="tabs" id="tab2">
-            <label for="tab2" role="tab" aria-controls="tab2-a" class="ch-tab">Questions</label>
-            <div id="tab-content2" class="tab-content">
+            <label for="tab2" class="ch-tab" role="tab" aria-controls="tab-content2">Questions</label>
+            <div id="tab-content2" class="tab-content" role="tabpanel">
               <dl>
                 <dt class="buyer">Buyer</dt>
                 <dd>Do you have this one in white?</dd>
@@ -103,8 +105,6 @@
             </div>
           </li>
         </ul>
-        <!--<div role="presentation" class="ch-box-lite">-->
-        <!--</div>-->
       </div>
 
     </div>
