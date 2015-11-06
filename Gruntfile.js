@@ -213,7 +213,14 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         src: ['<%= config.app %>/index.html'],
-        ignorePath: /^(\.\.\/)*\.\./
+        ignorePath: /^(\.\.\/)*\.\./,
+        options: {
+          overrides: {
+            'tiny.js': {
+              main: "dist/tiny.js"
+            }
+          }
+        }
       },
       sass: {
         src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
@@ -343,6 +350,12 @@ module.exports = function (grunt) {
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
+        },{
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/chico/dist',
+          src: ['assets/*.*'],
+          dest: '<%= config.dist %>'
         }]
       }
     },
@@ -358,9 +371,9 @@ module.exports = function (grunt) {
       ],
       dist: [
         'babel',
-        'sass',
-        'imagemin',
-        'svgmin'
+        'sass'
+        //'imagemin',
+        //'svgmin'
       ]
     }
   });
